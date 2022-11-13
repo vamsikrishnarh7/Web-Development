@@ -1,0 +1,43 @@
+/***********TAG SELECTORS*********************/
+body{
+    margin: 0;
+    text-align: center;
+}
+
+h1{
+    margin-top: 100px;
+    font-family: 'Sacramento', cursive;
+    font-size: 100px;
+    margin-bottom: 0;
+}
+
+p{
+    font-size: 25px;
+    font-family: 'Courier Prime', monospace;
+    color: #8EC3B0;
+}
+
+
+/*************CLASS SELECTORS***************/
+.top-container{
+    
+    background-color: #DEF5E5;
+    padding-top: 100px;
+    position: relative;
+
+}
+.bottom-cloud{
+    width: 200px;
+    position: absolute;
+}
+.top-cloud{
+    width: 250px;
+    position: absolute;
+    right: 30%;
+    top: 50px;
+}
+.mountain{
+    width: 550px;
+    margin-bottom: 0;
+}
+/*************ID SELECTORS******************/
