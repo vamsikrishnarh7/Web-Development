@@ -1,0 +1,146 @@
+body{
+    background: url("images/Netflix-Background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    color: blue;
+}
+
+p{
+    font-size: 12px;
+    color: grey;
+}
+#page-logo{
+    width: 200px;
+    position: relative;
+    left: 25px;
+    bottom: 12px;
+    cursor: pointer;
+}
+h2{
+    margin-top: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;position: relative;
+    top: 20px;
+}
+#remember-me:checked{
+    background-color: grey;
+}
+.credentials{
+    text-indent: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 15px;
+    background-color: #333;
+    color: white;
+    border-style: none;
+    border-radius: 5px;
+    height: 50px;
+    width: 100%;
+}
+.sign-in{
+    position: relative;
+    bottom: 50px;
+    color: white;
+    margin: 0 auto;
+    width: 450px;
+    height: 625px;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 5px;
+}
+
+button{    
+    background-color: red;
+    border-style: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 30px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    height: 50px;
+    width: 100%;
+}
+.sign-up-btn{
+    font-size: 16px;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0);
+    border-style: none;
+    color: white;
+}
+.sign-up-btn:hover{
+    cursor: pointer;
+    font-style: underline;
+}
+.inside-sign-in{
+    margin: 35px;
+    padding: 30px;
+}
+.below-submit{
+    margin-top: 20px;
+}
+#help{
+    float: right;
+    cursor: pointer;
+}
+#help:hover{
+    text-decoration: underline;
+}
+
+.help-div{
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 230px;
+    margin-top: 100px;
+    padding: 20px 250px;
+    
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0;
+}
+.helpline{
+    font-size: 16px;
+    display: inline-block;
+}
+#helpline-number:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+ul{
+    list-style: none;
+    color: grey;
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 0;
+    padding-left: 0;
+    font-size: 14px;
+}
+li{
+    margin: 10px 0 30px;
+    
+}
+li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+select{
+    border: 5px;
+    border-color: grey;
+    height: 50px;
+    padding:10px;
+    color: grey;
+    overflow: hidden;
+    background-color: black;
+}
+table{
+    color: grey;
+    display: inline-block;
+}
