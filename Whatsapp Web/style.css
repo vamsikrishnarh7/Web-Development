@@ -1,0 +1,244 @@
+body{
+    margin: 0; 
+    padding: 0;  
+    font-family: Helvetica,Arial, sans-serif;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+img{
+    width: 45px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+#green-box{
+    background: #00a884;
+    height:125px;
+}
+#grey-box{
+    background: #dfdfdb;
+    height: 100%;
+}
+.container1{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    background: grey;
+}
+.container2{
+    background-color: grey;
+    height: 670px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+}
+.container4{
+    padding: 10px;
+    height: 40px;
+    background: #f0f2f5;
+}
+.profile-options{
+    align-self: center;
+    float: right;
+    margin: 10px 25px 0 10px;
+    width: 25px;
+}
+.container5{
+    display: flex;
+    background: #ffffff;
+    height: 45px;
+    align-items: center;
+    justify-content: space-around;
+}
+#search-contacts{
+    background: #f0f2f5;
+    height: 30px;
+    width: 85%;
+    border-style: none;
+    border-radius: 5px;
+    text-indent: 25px;
+    outline: none;
+}
+.container5 img{
+    width: 18px;
+    order: 5;
+}
+.container6{
+    display: flex;
+    flex-direction: column;
+    background:white;
+    height: 580px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.chat-info{
+    position: relative;
+    padding: 15px;
+    display: flex;
+    justify-items: space-between;
+}
+.chat-info span{
+    display: block;
+    align-items: center;
+    position: relative;
+    top: 5px;
+    left: 20px;
+}
+.chat-info:hover{
+    cursor: pointer;
+    background: rgba(128,128,128,0.1);
+}
+.chat-info:focus-within{
+    background: rgba(128,128,128,0.5);
+}
+.contact-name-side{
+    font-size: 18px;
+
+}
+.box1{
+    flex: 1;
+}
+.box2{
+    flex: 6;
+}
+.box3{
+    flex: 1;
+}
+.message-info{
+    margin-top: 5px;
+    font-size: 14px;
+    color: rgba(0,0,0,0.5);
+}
+.time{
+    font-size: 12px;
+    color: rgba(0,0,0,0.5);
+
+}
+.no-of-messages{
+    margin-top: 5px;
+    font-size: 14px;
+    text-align: center;
+    background: #25d366;
+    width: 18px;
+    border-radius: 50px;
+    color: white;
+}
+.container3{
+    display: flex;
+    flex-direction: column;
+    background: grey;
+    width: 1030px;
+}
+
+.container7{
+    display: flex;
+    padding: 10px;
+    background: #f0f2f5;
+    height: 40px;
+    justify-content: space-between;
+}
+.charbar-options{
+    margin: 10px 0 25px 10px;
+    width: 20px;
+}
+
+.user-icon{
+    background: rgba(128,128,128,0.2);
+    border: 1px solid rgba(128,128,128,0.2);
+    float: left;
+}
+p{
+    position: relative;
+    bottom: 40px;
+    left: 65px;
+}
+.contact-name{
+    font-size: 16px;
+}
+.user-status{
+    font-size: 12px;
+}
+.container8{
+    display: flex;
+    flex-direction: column-reverse;
+    height: 550px;
+    background: url('images/whatsappbg.png');
+    overflow: scroll;
+}
+.message{
+    position: relative;
+    margin-left: 60px;
+    background: white;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 90px;
+    padding: 10px;
+    text-indent: 5px;
+}
+.message-time{
+    font-size: 12px;
+    color: rgba(128,128,128,0.8);
+    margin-right: 3px;
+    margin-bottom: 3px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.unread{
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.4);
+    height: 40px;
+}
+.unread span{
+    padding: 5px;
+    background: white;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+.day{
+    display: flex;
+    align-items : center;
+    justify-content: center;
+}
+.day span{
+    background: white;
+    padding: 5px;
+    color: rgba(0,0,0,0.5);
+    width: fit-content;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.container9{
+    display: flex;
+    align-items: center;
+    height: 60px;
+    background: #f0f2f5;
+}
+.container9 img{
+    width: 20px;
+    margin:0 10px;
+}
+#message-space{
+
+    border-style: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: white;
+    height: 40px;
+    width: 90%;
+    text-indent: 10px;
+    outline: none;
+}
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background: rgba(128,128,128,0.5);
+}
