@@ -17,7 +17,8 @@ hr{
 .container{
     margin: 0 auto;
     margin-top: 50px;
-    width: 50%;
+    max-width: 700px;
+    width: 80%;
     display: grid;
     grid-template-columns: repeat(2,1fr);
 }
