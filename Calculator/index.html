@@ -7,43 +7,45 @@
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="icons/calculator.png">
+    <script src="./script.js" defer></script>
 </head>
 <body>
     <div class="container">
         <div class="item item1">Calculator</div>
-        <div class="item item2">Answer</div>
-        <div class="item item3">AC</div>
-        <div class="item item4">
+        <div id="answer" class="item item2 ">Answer</div>
+        <div class="item item3  btn">AC</div>
+        <div class="item item4 btn-backspace">
             <img src="icons/backspace.png" alt="clear" style="margin-bottom: 5px;">
         </div>
-        <div class="item item5" style="color: #7c5efe;font-weight: bold;">%</div>
-        <div class="item item6">
-            <div class="symbol">÷</div>
+        <div class="item item5 btn" style="color: #7c5efe;font-weight: bold;">%</div>
+        <div class="item item6 ">
+            <div class="symbol btn">÷</div>
         </div>
-        <div class="item item7">7</div>
-        <div class="item item8">8</div>
-        <div class="item item9">9</div>
+        <div class="item item7 btn">7</div>
+        <div class="item item8 btn">8</div>
+        <div class="item item9 btn">9</div>
         <div class="item item10">
-            <div class="symbol">X</div>
+            <div class="symbol  btn">*</div>
         </div>
-        <div class="item item11">4</div>
-        <div class="item item12">5</div>
-        <div class="item item13">6</div>
+        <div class="item item11  btn">4</div>
+        <div class="item item12 btn">5</div>
+        <div class="item item13 btn">6</div>
         <div class="item item14">
-            <div class="symbol">-</div>
+            <div class="symbol btn">-</div>
         </div>
-        <div class="item item15">1</div>
-        <div class="item item16">2</div>
-        <div class="item item17">3</div>
+        <div class="item item15 btn">1</div>
+        <div class="item item16 btn">2</div>
+        <div class="item item17 btn">3</div>
         <div class="item item18 ">
-            <div class="symbol">+</div>
+            <div class="symbol btn">+</div>
         </div>
-        <div class="item item19"></div>
-        <div class="item item20">0</div>
-        <div class="item item21">.</div>
+        <div class="item item19 btn"></div>
+        <div class="item item20 btn">0</div>
+        <div class="item item21 btn">.</div>
         <div class="item item22 ">
-            <div class="symbol">=</div>
+            <div class="symbol  btn">=</div>
         </div>
     </div>
+    <p id="error-text"></p>
 </body>
 </html>
