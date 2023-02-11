@@ -1,0 +1,54 @@
+body{
+    font-family: 'Lato', sans-serif;
+}
+#title{
+    color: #1DA1F2;
+    font-size: 36px;
+}
+
+.container{
+    max-width: 700px;
+    width: 80%;
+    margin: 0 auto;
+    border: solid 3px black;
+    border-radius: 3px;
+    padding: 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 3px 5px #1DA1F2;
+}
+
+#tweet{
+    resize: vertical;
+}
+#tweet:focus{
+    border: solid 2px black;
+}
+
+.result{
+    max-width: 700px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.res-box{
+    border: solid 2px black;
+    border-radius: 3px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.red{
+    box-shadow: 2px 4px red;
+}
+.green{
+    box-shadow: 2px 4px green;
+}
