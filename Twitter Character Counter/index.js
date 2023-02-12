@@ -6,8 +6,16 @@ var charCountElement = document.querySelector("#cur-chars");
 var remainingCharCountElement = document.querySelector("#remaining-chars");
 
 
-tweetElement.addEventListener("keypress",()=>{
-    changeCount(0); // as it is keypress event, make copy pasted text length zero
+tweetElement.addEventListener("input",(event)=>{
+    if(event.keyCode === 8){// keyCode of backspace is 8
+        if(parseInt(charCountElement.textContent)>0){
+            charCountElement.textContent = parseInt(charCountElement.textContent)-1;
+            remainingCharCountElement.textContent = parseInt(remainingCharCountElement.textContent)+1;
+        }
+    }
+    else{
+        changeCount(0); // as it is keypress event, make copy pasted text length zero
+    }
 })
 
 tweetElement.addEventListener("paste",(event)=>{
@@ -24,7 +32,7 @@ tweetElement.addEventListener("paste",(event)=>{
 function changeCount(pasteTextLen){
     // get length of text that entered in text-area
     
-    let count = tweetElement.value.length+ pasteTextLen + 1;
+    let count = tweetElement.value.length+ pasteTextLen ;
     if(count >=240){
         tweetElement.value = tweetElement.value.slice(0,240);
         count = tweetElement.value.length+ pasteTextLen + 1;
@@ -35,12 +43,12 @@ function changeCount(pasteTextLen){
     
 }
 
-tweetElement.addEventListener("keyup",(event)=>{
+// tweetElement.addEventListener("keyup",(event)=>{
     
-    if(event.keyCode === 8){// keyCode of backspace is 8
-        if(parseInt(charCountElement.textContent)>0){
-            charCountElement.textContent = parseInt(charCountElement.textContent)-1;
-            remainingCharCountElement.textContent = parseInt(remainingCharCountElement.textContent)+1;
-        }
-    }
-})
+//     if(event.keyCode === 8){// keyCode of backspace is 8
+//         if(parseInt(charCountElement.textContent)>0){
+//             charCountElement.textContent = parseInt(charCountElement.textContent)-1;
+//             remainingCharCountElement.textContent = parseInt(remainingCharCountElement.textContent)+1;
+//         }
+//     }
+// })
