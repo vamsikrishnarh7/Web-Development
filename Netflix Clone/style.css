@@ -55,13 +55,13 @@ h2{
 }
 
 button{    
-    background-color: red;
+    background-color: rgb(190, 21, 21);
     border-style: none;
     border-radius: 5px;
     cursor: pointer;
     margin-top: 30px;
     color: white;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: bold;
     height: 50px;
     width: 100%;
@@ -87,6 +87,8 @@ button{
 #help{
     float: right;
     cursor: pointer;
+    position: relative;
+    bottom: 8px;
 }
 #help:hover{
     text-decoration: underline;
@@ -97,7 +99,9 @@ button{
     height: 230px;
     margin-top: 100px;
     padding: 20px 250px;
-    
+}
+.help-div hr{
+    display: none;
 }
 .container{
     display: flex;
@@ -143,4 +147,68 @@ select{
 table{
     color: grey;
     display: inline-block;
+}
+@media (max-width:480px){
+    body{
+        background: black;
+    }
+    #page-logo{
+        width: 100px;
+        position: relative;
+        left: 15px;
+        top: 5px;
+        z-index: 1;
+        cursor: pointer;
+    }
+    .sign-in{
+        width: 90%;
+        position: relative;
+        right: 55px;
+        bottom: 90px;
+    }
+    .credentials{
+        width: 170%;
+    }
+    button{
+        width: 170%;
+    }
+    ::placeholder{
+        font-size: 14px;
+        font-weight: lighter;
+    }
+    .below-submit label{
+        font-size: 13px;
+    }
+    .below-submit input{
+        width: 15px;
+        height: 15px;
+    }
+    #help{
+        left: 90px;
+        bottom: 25px;
+    }
+    .sign-up-btn{
+        position: relative;
+        left: 80px;
+        bottom: 17px;
+    }
+    .captcha{
+        width: 170%;
+    }
+    .help-div{
+        width: 300px;
+        padding: 20px 0px;
+        margin-top: -70px;
+        margin: 12px;
+    }
+    .help-div hr{
+        display: block;
+        color: aliceblue;
+        position: relative;
+        right: 20px;
+    }
+    .helpline{
+        position: relative;
+        top: 15px;
+    }
 }
